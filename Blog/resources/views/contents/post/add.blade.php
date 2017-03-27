@@ -7,10 +7,10 @@
         {!! csrf_field() !!}
         <p><input type="text" name="title" placeholder="제목을 써주세용"/></p>
         <textarea name="content" id="" cols="30" rows="10">{{ old('description') }}</textarea>
-        <p>
+        {{--<p>
             <label for="upload">사진업로드</label>
             <input type="file" name="img" accept="image/*" capture="gallery">
-        </p>
+        </p>--}}
         <p>
             <label for="pick">사진찍기</label>
             <input type="file" name="img" id="pick" accept="image/*" capture="gallery">

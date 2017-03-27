@@ -63,7 +63,7 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         $request = app('request');
-        $imgPath = $request->file('profile_image')->store('public/images/users','public');
+        $imgPath = $request->file('profile_image')->store('images/users','public');
 
         return User::create([
             'name' => $data['name'],
