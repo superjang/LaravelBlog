@@ -2,6 +2,9 @@
 
 @section('content')
 <div class="container">
+    <ul>
+        <li><a href="{{ route('posts.create') }}">새글쓰기</a></li>
+    </ul>
     포스트 리스트 페이지 입니다.
     <h3>최신 등록된 글</h3>
     <ul>
