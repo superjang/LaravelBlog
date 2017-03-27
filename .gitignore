@@ -1,3 +1,6 @@
+# IntelliJ
+.idea/
+
 vendor/
 node_modules/
 

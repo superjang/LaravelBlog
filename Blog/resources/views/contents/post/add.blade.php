@@ -8,7 +8,7 @@
         <p><input type="text" name="title" placeholder="제목을 써주세용"/></p>
         <textarea name="content" id="" cols="30" rows="10">{{ old('description') }}</textarea>
         <p>
-            <input type="file" name="img"/>
+            <input type="file" name="img" accept="image/*" capture="gallery">
         </p>
 
 
