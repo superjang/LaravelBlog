@@ -19,6 +19,11 @@
             'csrfToken' => csrf_token(),
         ]) !!};
     </script>
+    <style>
+        img{
+            max-width:100%;
+        }
+    </style>
 </head>
 <body>
     <div id="app">
