@@ -23,13 +23,13 @@ class UserTableSeeder extends Seeder
         // storage/public/images 디렉토리에 있는 파일 목록을 가져옵니다.
         $files = Storage::files('public/images/users');
         $genders = ['mail', 'femail'];
-        
+
         \App\User::create([
             'name' => $this->faker->name,
             'email' => $this->faker->unique()->safeEmail,
             'age' => rand(10,30),
             'sex' => $this->faker->randomElement($genders),
-            'profile_image' => $files[array_rand($files,1)],
+            'profile_image' => $this->faker->imageUrl($width = 50, $height = 50),
             'password' => bcrypt('secret'),
             'remember_token' => str_random(10),
         ]);

@@ -29,10 +29,10 @@ $factory->define(App\User::class, function () use ($faker) {
 
 $factory->define(App\Post::class, function () use ($faker) {
     // storage/public/images 디렉토리에 있는 파일 목록을 가져옵니다.
-    $files = Storage::files('public/images');
+    // $files = Storage::files('public/images');
 
     return [
-        'img_path' => $files[array_rand($files,1)],
+        'img_path' => $this->faker->imageUrl($width = 720, $height = 480),
         'title' => $this->faker->title(),
         'content' => $this->faker->text(),
     ];
