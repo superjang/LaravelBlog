@@ -14,7 +14,7 @@
 Auth::routes();
 Route::get('/', function(){
    return redirect(route('mains.index'));
-});
+})->name('main');
 Route::resource('/mains', 'MainController');
 Route::resource('/posts', 'PostController');
 //Route::resource('/posts', 'PostController', ['names' => [

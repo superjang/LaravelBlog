@@ -29,16 +29,18 @@ class MainController extends Controller
      */
     public function index()
     {
-        $mainItems = \App\Main::all();
-        $userItems = \App\User::orderBy('created_at', 'desc')->limit(3)->get();
-        $recentPosts = \App\Post::orderBy('updated_at', 'desc')->limit(3)->get();
+        $mainItems = \App\MainContent::first();
+        $recentPosts = \App\Post::orderBy('updated_at', 'desc')->limit(4)->get();
+        $userItems = \App\User::orderBy('created_at', 'desc')->limit(4)->get();
 
         $modelView = [
             'mainItems' => $mainItems,
             'postItems' => $recentPosts,
             'userItems' => $userItems,
         ];
-//        dd($modelView);
+
+
+
         return view('contents.main.base')->with($modelView);
     }
 

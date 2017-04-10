@@ -1,0 +1,163 @@
+html, body { height: 100%; }
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+
+body { line-height: 1; font-family: "Noto Sans DemiLight", "Malgun Gothic"; -webkit-font-smoothing: antialiased; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+nav, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+a { margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+
+/* change colours to suit your needs */
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+/* change colours to suit your needs */
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #cccccc; margin: 1em 0; padding: 0; }
+
+input, select { vertical-align: middle; }
+
+button { background-color: transparent; border: none; }
+
+a { text-decoration: none; color: #3e3e3e; }
+
+#app { width: 100%; background-color: #fff; }
+#app .section { width: 100%; }
+#app .section .section_inner { position: relative; box-sizing: border-box; max-width: 1280px; margin: 0 auto; }
+#app .wrap_comments { max-width: 1024px; margin: 0 auto; padding: 0 20px; }
+#app #footer { margin-top: 100px; }
+
+#app.page_main { height: 100%; }
+#app.page_post_list .page_info { margin-top: 50px; }
+#app.page_post_list .wrap_post_list { margin-top: 50px; }
+#app.page_post_list .pagination { margin: 80px auto; }
+#app.page_post_write { margin-top: 80px; }
+#app.page_post_write #wrap_post_write { padding: 50px 0; }
+#app.page_post_detail { margin-top: 80px; }
+#app.page_post_detail .section .section_inner { max-width: 100%; padding: 0; }
+#app.page_post_detail .section #wrap_post_detail { padding-top: 50px; }
+#app.page_post_detail .section .wrap_comments { margin: 50px auto; }
+
+#header { position: fixed; top: 0; z-index: 9999; width: 100%; box-sizing: border-box; background-color: rgba(0, 0, 0, 0.2); }
+#header #header--inner { min-width: 720px; max-width: 1280px; margin: 0 auto; }
+
+#header #logo__title { display: inline-block; box-sizing: border-box; color: #fff; line-height: 78px; padding: 0 30px; margin-left: -30px; letter-spacing: 1.5px; text-transform: uppercase; font-size: 26px; font-weight: bold; font-family: "Sue Ellen Francisco", cursive; }
+
+#header { *zoom: 1; }
+#header:after { display: block; clear: both; content: ''; }
+#header .nav__global { float: right; }
+#header .nav__global ul { *zoom: 1; }
+#header .nav__global ul:after { display: block; clear: both; content: ''; }
+#header .nav__global ul .nav__link { float: left; }
+#header .nav__global ul .nav__link .nav__link_text { display: block; letter-spacing: 1.5px; text-transform: uppercase; padding: 30px 15px; color: #fff; box-sizing: border-box; font-size: 18px; font-weight: bold; font-family: "Sue Ellen Francisco", cursive; }
+#header .nav__global ul .nav__link .nav__link_text:hover { color: #26ff8c; }
+#header .nav__global ul .nav__link .button__login_text { padding-top: 0; padding-bottom: 0; height: 78px; cursor: pointer; }
+#header .nav__global ul .nav__link #form__login { position: absolute; padding: 15px; width: 240px; right: 0; background-color: rgba(0, 0, 0, 0.2); border-radius: 3px; transition: all 1s ease; }
+#header .nav__global ul .nav__link #form__login label { position: fixed; left: -9999px; top: -9999px; }
+#header .nav__global ul .nav__link #form__login .field { width: 100%; border: none; box-sizing: border-box; padding: 10px; height: 45px; font-size: 14px; }
+#header .nav__global ul .nav__link #form__login .field.field__id { border-radius: 3px 3px 0 0; border-bottom: 1px solid #ddd; }
+#header .nav__global ul .nav__link #form__login .field.field__password { border-radius: 0 0 3px 3px; }
+#header .nav__global ul .nav__link #form__login .button__login { width: 100%; margin-top: 15px; text-align: center; border-radius: 3px; height: 45px; cursor: pointer; text-transform: uppercase; background-color: #fff; color: #00cc99; font-size: 14px; font-weight: bold; transition: all .2s ease; }
+#header .nav__global ul .nav__link #form__login .button__login:hover { background-color: #00cc99; color: #fff; }
+#header .nav__global ul .nav__link.nav__login_item--on { position: relative; }
+#header .nav__global ul .nav__link.nav__login_item--on #form__login { top: 85px; display: block; }
+#header .nav__global ul .nav__link.nav__login_item--off #form__login { top: 78px; display: none; }
+
+#footer { width: 100%; box-sizing: border-box; background: #586277; }
+#footer #footer--inner { min-width: 720px; max-width: 1280px; margin: 0 auto; padding: 20px; color: #fff; }
+#footer #footer--inner .text { text-align: center; color: #b0b0b0; }
+
+.btn--go_top { position: fixed; right: 30px; bottom: 30px; display: block; width: 60px; height: 60px; background-color: rgba(0, 0, 0, 0.2); color: #fff; border-radius: 6px; transition: all .3s ease; }
+.btn--go_top:hover { background-color: rgba(38, 255, 140, 0.8); }
+.btn--go_top .text { position: fixed; left: -9999px; top: -9999px; }
+
+#main_visual { background-size: cover; height: 100%; width: 100%; position: relative; display: table; }
+#main_visual .main_visual_text { line-height: 1.2; color: #fff; display: table-cell; vertical-align: middle; text-align: center; text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4); }
+#main_visual .main_visual_text .text_main { display: block; font-size: 70px; font-weight: bold; margin-bottom: 15px; }
+#main_visual .main_visual_text .text_sub { display: block; font-size: 30px; }
+
+.wrap_item_list { padding-top: 50px; }
+.wrap_item_list:last-child { padding-bottom: 50px; }
+.wrap_item_list .wrap_item_list_inner .wrap_item_list_title { display: block; text-align: center; margin: 0 auto 40px; width: 300px; height: 55px; background: url("../images/image/common/bg_title_flag.png") no-repeat center top; line-height: 55px; color: #666; font-size: 18px; font-weight: bold; font-family: "Sue Ellen Francisco", cursive; }
+.wrap_item_list .wrap_item_list_inner .item_list { *zoom: 1; }
+.wrap_item_list .wrap_item_list_inner .item_list:after { display: block; clear: both; content: ''; }
+.wrap_item_list .wrap_item_list_inner .item_list .item { float: left; box-sizing: border-box; padding: 0 10px; }
+.wrap_item_list .wrap_item_list_inner .item_list .item .item_link { width: 100%; display: block; border-radius: 10px 10px 0 10px; overflow: hidden; }
+.wrap_item_list .wrap_item_list_inner .item_list .item .item_link .item_photo { width: 100%; height: 200px; display: block; }
+.wrap_item_list .wrap_item_list_inner .item_list .item .item_link .item_content { box-sizing: border-box; padding: 20px; }
+.wrap_item_list .wrap_item_list_inner .item_list .item .item_link .item_content .item_content_title { font-size: 20px; margin-bottom: 10px; border-bottom: 1px solid #000; padding-bottom: 10px; }
+.wrap_item_list .wrap_item_list_inner .item_list .item .item_link .item_content .item_content_description { line-height: 1.4em; }
+.wrap_item_list .wrap_item_list_inner .item_list.column2 .item { width: 50%; }
+.wrap_item_list .wrap_item_list_inner .item_list.column3 .item { width: 33.33%; }
+.wrap_item_list .wrap_item_list_inner .item_list.column4 .item { width: 25%; }
+.wrap_item_list .wrap_item_list_inner .item_list.column5 .item { width: 20%; }
+.wrap_item_list .wrap_item_list_inner .user_list { *zoom: 1; }
+.wrap_item_list .wrap_item_list_inner .user_list:after { display: block; clear: both; content: ''; }
+.wrap_item_list .wrap_item_list_inner .user_list .user { float: left; box-sizing: border-box; width: 100px; margin-right: 30px; }
+.wrap_item_list .wrap_item_list_inner .user_list .user:last-child { margin-right: 0; }
+.wrap_item_list .wrap_item_list_inner .user_list .user .user_photo { width: 100%; border-radius: 10px 10px 0 10px; overflow: hidden; }
+.wrap_item_list .wrap_item_list_inner .user_list .user .user_name { margin-top: 10px; display: block; color: #666; text-align: center; }
+.wrap_item_list .wrap_item_list_inner .user_list .user .user_traveling_country { margin-top: 5px; display: block; color: #666; text-align: center; border-top: 1px solid #666; padding-top: 10px; }
+
+#top_visual { width: 100%; height: 500px; display: table; }
+#top_visual .visual_text { line-height: 1.2; color: #fff; display: table-cell; vertical-align: middle; text-align: center; text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4); }
+#top_visual .visual_text .text_main { display: block; font-size: 50px; font-weight: bold; margin-bottom: 15px; }
+#top_visual .visual_text .text_sub { display: block; font-size: 20px; }
+
+.pagination { display: table; margin: 0 auto; }
+.pagination .btn_prev_page, .pagination .btn_next_page, .pagination .btn_page_item { text-align: center; display: table-cell; vertical-align: middle; width: 45px; height: 45px; margin-right: -4px; transition: all .5s ease; }
+.pagination .btn_prev_page:hover, .pagination .btn_next_page:hover, .pagination .btn_page_item:hover { color: #fff; background-color: rgba(38, 255, 140, 0.8); }
+.pagination .btn_prev_page { border-top: 1px solid #ddd; border-right: 1px solid #ddd; border-left: 1px solid #ddd; border-bottom: 1px solid #ddd; border-radius: 3px 0 0 3px; }
+.pagination .btn_next_page { border-top: 1px solid #ddd; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd; border-radius: 0 3px 3px 0; }
+.pagination .btn_page_item { border-top: 1px solid #ddd; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd; color: #666; font-size: 18px; font-weight: bold; }
+.pagination .btn_page_item.on { color: #fff; background-color: rgba(38, 255, 140, 0.8); }
+
+.wrap_comments .comments_title { font-size: 30px; font-weight: bold; color: #6b6b6b; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #a1a1a1; }
+.wrap_comments label[for="comment"] { position: fixed; left: -9999px; top: -9999px; }
+.wrap_comments .field_comment { width: 100%; height: 50px; border: 1px solid #a1a1a1; border-radius: 5px; background-color: #fff; box-sizing: border-box; padding: 15px; color: #6b6b6b; font-size: 16px; }
+.wrap_comments .btn_write_comment { width: 100%; height: 50px; margin-top: 10px; text-align: center; background-color: rgba(38, 255, 140, 0.8); border-radius: 5px; font-size: 16px; font-weight: bold; cursor: pointer; color: #fff; }
+.wrap_comments .comments_list { margin-top: 25px; }
+.wrap_comments .comments_list .comments_item { position: relative; margin-bottom: 15px; *zoom: 1; }
+.wrap_comments .comments_list .comments_item:last-child { margin-bottom: 0; }
+.wrap_comments .comments_list .comments_item:after { display: block; clear: both; content: ''; }
+.wrap_comments .comments_list .comments_item .writer { width: 60px; margin-right: 15px; float: left; }
+.wrap_comments .comments_list .comments_item .writer .user_photo { width: 60px; margin-bottom: 5px; border-radius: 5px 5px 0 5px; }
+.wrap_comments .comments_list .comments_item .writer .user_name { display: block; text-align: center; color: #7e7e7e; font-weight: bold; font-size: 14px; }
+.wrap_comments .comments_list .comment { float: left; width: 100%; margin-left: -80px; padding-left: 80px; box-sizing: border-box; }
+
+.page_info .page_info_title { font-size: 30px; font-family: "Sue Ellen Francisco", cursive; letter-spacing: 1.5px; text-align: center; margin-bottom: 10px; color: #6b6b6b; }
+.page_info .list_sort { max-width: 320px; margin: 20px auto; display: block; width: 100%; text-align: center; }
+.page_info .list_filter { max-width: 320px; margin: 20px auto; display: block; width: 100%; text-align: center; }
+
+.wrap_post_list { margin-bottom: 50px; }
+.wrap_post_list .post_list .post_item { margin-bottom: 50px; }
+.wrap_post_list .post_list .post_item:last-child { margin-bottom: 0; }
+.wrap_post_list .post_list .post_item .post_link { width: 100%; display: block; }
+.wrap_post_list .post_list .post_item .post_link .item_title { display: table-cell; width: 100%; height: 100%; color: #fff; text-align: center; vertical-align: middle; font-size: 26px; font-weight: bold; background: rgba(0, 0, 0, 0.4); }
+.wrap_post_list .post_list .post_item .post_link .item_photo { width: 100%; height: 300px; display: table; border-radius: 15px 15px 0 15px; margin-bottom: 10px; overflow: hidden; transition: all 1s ease; }
+.wrap_post_list .post_list .post_item .post_link .item_info { margin-top: 15px; }
+.wrap_post_list .post_list .post_item .post_link .item_description { margin-top: 5px; line-height: 1.2em; }
+
+#wrap_post_detail .post_header { max-width: 1024px; margin: 0 auto 10px; padding: 0 0 10px; border-bottom: 1px solid #a1a1a1; }
+#wrap_post_detail .post_header .post_title { font-size: 30px; margin-bottom: 10px; color: #6b6b6b; }
+#wrap_post_detail .post_header .post_info { color: #6b6b6b; font-size: 14px; font-weight: bold; }
+#wrap_post_detail .post_header .post_info .date, #wrap_post_detail .post_header .post_info .writer { font-weight: normal; }
+#wrap_post_detail .post_content * { max-width: 1024px; margin: 0 auto; padding: 0 20px; }
+#wrap_post_detail .post_content { width: 100%; }
+#wrap_post_detail .post_content * { margin: 25px auto; }
+#wrap_post_detail .post_content p { line-height: 1.4em; }
+#wrap_post_detail .post_content img { padding: 0; width: 100%; max-width: 100%; margin: 0; }
