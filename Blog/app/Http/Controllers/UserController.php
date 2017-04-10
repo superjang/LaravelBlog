@@ -21,15 +21,15 @@ class UserController extends Controller
         $users = \App\User::paginate(5);
         $modelView = [ 'data' => $users ];
 
-        return view('contents.user.list')->with($modelView);
+        return view('contents.user._base')->with($modelView);
     }
 
     public function show(Request $request)
     {
         $user = \App\User::find($request->input('id'));
-        
+
         $modelView = [ 'data' => $user ];
 
-        return view('contents.user.detail')->with($modelView);
+        return view('contents.user._detail')->with($modelView);
     }
 }

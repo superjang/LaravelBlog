@@ -16,9 +16,7 @@
 
     <body>
 
-        @include('common.header')
-        @yield('content')
-        @include('common.footer')
+        @yield('page')
 
     <!-- Scripts -->
     <script>

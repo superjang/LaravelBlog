@@ -29,7 +29,7 @@ class PostController extends Controller
         $recentPosts = \App\Post::orderBy('created_at', 'desc')->paginate(5);
         $modelView = [ 'postItems' => $recentPosts, ];
 
-        return view('contents.post.base')->with($modelView);
+        return view('contents.post._base')->with($modelView);
     }
 
     /**

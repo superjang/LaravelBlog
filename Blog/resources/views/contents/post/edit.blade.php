@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('content')
+@section('page')
 <div id="app" class="page_post_list">
     <div class="container">
         <ul>

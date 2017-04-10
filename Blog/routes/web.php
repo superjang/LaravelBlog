@@ -16,6 +16,7 @@ Route::get('/', function(){
    return redirect(route('mains.index'));
 })->name('main');
 Route::resource('/mains', 'MainController');
+Route::get('/about', 'AboutController@index')->name('about');
 Route::resource('/posts', 'PostController');
 //Route::resource('/posts', 'PostController', ['names' => [
 //    'index' => 'posts.index',

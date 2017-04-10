@@ -41,7 +41,7 @@ class MainController extends Controller
 
 
 
-        return view('contents.main.base')->with($modelView);
+        return view('contents.main._base')->with($modelView);
     }
 
     /**
