@@ -18,6 +18,7 @@ Route::get('/', function(){
 Route::resource('/mains', 'MainController');
 Route::get('/about', 'AboutController@index')->name('about');
 Route::resource('/posts', 'PostController');
+Route::get('/photo', 'PhotoController@index')->name('photo');
 //Route::resource('/posts', 'PostController', ['names' => [
 //    'index' => 'posts.index',
 //    'create' => 'posts.create',

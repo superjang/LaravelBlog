@@ -53,6 +53,7 @@ body { background-color: #586277; }
 #app.page_post_detail .container .section .section_inner { max-width: 100%; padding: 0; }
 #app.page_post_detail .container .section #wrap_post_detail { padding-top: 50px; }
 #app.page_post_detail .container .section .wrap_comments { margin: 50px auto; }
+#app.page_photo_list .container { padding-top: 80px; }
 #app.page_user_list { padding-top: 80px; }
 
 #header { position: fixed; top: 0; z-index: 9999; width: 100%; box-sizing: border-box; background-color: rgba(0, 0, 0, 0.2); }

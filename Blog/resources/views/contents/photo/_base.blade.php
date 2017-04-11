@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('page')
-<div id="app" class="page_post_list">
+<div id="app" class="page_photo_list">
     @include('common.header')
 
     <div class="container">
@@ -21,16 +21,10 @@
                 </div>
             </div>
         </div>
-        
-        <div class="section">
-            <div class="section_inner">
-                @include('contents.photo.list')
-            </div>
-        </div>
 
         <div class="section">
             <div class="section_inner">
-                {{ $postItems->links() }}
+                @include('contents.photo.list')
             </div>
         </div>
     </div>

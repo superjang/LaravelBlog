@@ -2,7 +2,7 @@
     <ul>
         <li class="nav__link"><a href="{{ route('about') }}" class="nav__link_text">About</a></li>
         <li class="nav__link"><a href="{{ route('posts.index') }}" class="nav__link_text">Post</a></li>
-        <li class="nav__link"><a href="{{ route('posts.index') }}" class="nav__link_text">Photo</a></li>
+        <li class="nav__link"><a href="{{ route('photo') }}" class="nav__link_text">Photo</a></li>
         <li class="nav__link"><a href="{{ route('users') }}" class="nav__link_text">Traveler</a></li>
         <!--
             .nav__login_item--on
