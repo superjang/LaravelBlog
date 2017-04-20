@@ -89,7 +89,7 @@ class PostController extends Controller
             'user' => $user,
         ];
 
-        return view('contents.post.detail')->with($modelView);
+        return view('contents.post._detail')->with($modelView);
     }
 
     /**

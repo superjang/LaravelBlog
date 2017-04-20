@@ -5,12 +5,8 @@
     @include('common.header')
     @include('contents.main.visual')
 
-    <div class="container">
-        <div class="section">
-            <div class="section_inner">
-                @include('contents.main.item_list')
-            </div>
-        </div>
+    <div id="content">
+        @include('contents.main.item_list')
 
         {{--
             @foreach( $userItems as $user )
@@ -24,5 +20,6 @@
     </div>
 
     @include('common.footer')
+    @include('common.btn_goto_top_page')
 </div>
 @endsection

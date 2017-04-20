@@ -10,6 +10,12 @@
         -->
         @if (Auth::check())
         <li class="nav__link nav__login_item--off">
+            <form action="{{ route('logout') }}" method="post">
+                {{ csrf_field() }}
+                <button type="submit" class="button__login_text nav__link_text">Logout</button>
+            </form>
+        </li>
+        <li class="nav__link link__user">
             <a href="{{ route('users.show', ['id'=>Auth::user()->id]) }}" class="nav__link_user" style="background-image:url('{{ Storage::url(Auth::user()->profile_image) }}');"></a>
         </li>
         @else

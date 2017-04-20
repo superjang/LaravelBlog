@@ -4,7 +4,7 @@
 <div id="app" class="page_photo_list">
     @include('common.header')
 
-    <div class="container">
+    <div id="content">
 
         <div class="section">
             <div class="section_inner">

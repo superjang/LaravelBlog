@@ -5,14 +5,13 @@
     @include('common.header')
     @include('contents.post.visual')
 
-    <div class="container">
+    <div id="content">
         <div class="section">
-            <div class="section_inner">
-                @include('contents.about.content')
-            </div>
+            @include('contents.about.content')
         </div>
     </div>
 
     @include('common.footer')
+    @include('common.btn_goto_top_page')
 </div>
 @endsection
