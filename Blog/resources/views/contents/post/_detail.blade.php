@@ -54,6 +54,12 @@
                     <input type="submit" class="btn_write_comment">
                     {{--<button type="button" class="btn_write_comment">댓글 작성</button>--}}
                 </form>
+                @else
+                <label for="comment">댓글</label>
+                <input type="hidden" name="post_id">
+                <input type="hidden" name="user_id">
+                <textarea name="content" id="comment" class="field_comment" cols="30" rows="10" readonly>댓글을 남겨기 위해서는 로그인이 필요합니다.</textarea>
+                <input type="submit" class="btn_write_comment">
                 @endif
 
                 <ul class="comments_list">
