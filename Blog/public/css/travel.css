@@ -163,5 +163,5 @@ body { background-color: #586277; }
 #wrap_post_detail .post_content * { max-width: 1024px; margin: 0 auto; padding: 0 20px; }
 #wrap_post_detail .post_content { width: 100%; }
 #wrap_post_detail .post_content * { margin: 25px auto; }
-#wrap_post_detail .post_content p { line-height: 1.4em; }
+#wrap_post_detail .post_content p { font-size: 14px; line-height: 1.4em; }
 #wrap_post_detail .post_content img { padding: 0; width: 100%; max-width: 100%; margin: 0; }

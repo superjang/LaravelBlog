@@ -34,7 +34,7 @@
                 </div>
 
                 <div class="post_content">
-                    {{$postItem->content}}
+                    {!! $postItem->content !!}
                     <img src="{{ Storage::url($postItem->img_path)}}" alt="">
                 </div>
             </div>
