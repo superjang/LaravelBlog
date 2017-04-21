@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8bfea755-1c4f-43af-b976-bb187e7910f6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blog/public/css/travel.css" afterPath="$PROJECT_DIR$/Blog/public/css/travel.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blog/resources/views/contents/main/item_list.blade.php" afterPath="$PROJECT_DIR$/Blog/resources/views/contents/main/item_list.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blog/resources/views/contents/main/visual.blade.php" afterPath="$PROJECT_DIR$/Blog/resources/views/contents/main/visual.blade.php" />
     </list>
     <ignored path="LaravelBlog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,11 +48,43 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="travel.css" pinned="false" current-in-tab="true">
+          <file leaf-file-name="travel.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Blog/public/css/travel.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="575">
                   <caret line="167" column="0" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_base.blade.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Blog/resources/views/contents/main/_base.blade.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="330">
+                  <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="40" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="visual.blade.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Blog/resources/views/contents/main/visual.blade.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="165">
+                  <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+                  <folding>
+                    <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="item_list.blade.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Blog/resources/views/contents/main/item_list.blade.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="330">
+                  <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -135,7 +168,6 @@
         <option value="$PROJECT_DIR$/Blog/resources/views/common/header.blade.php" />
         <option value="$PROJECT_DIR$/Blog/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/Blog/resources/views/contents/main/main_item_list.blade.php" />
-        <option value="$PROJECT_DIR$/Blog/resources/views/contents/main/visual.blade.php" />
         <option value="$PROJECT_DIR$/Blog/resources/views/contents/main/base.blade.php" />
         <option value="$PROJECT_DIR$/Blog/app/Http/Controllers/MainController.php" />
         <option value="$PROJECT_DIR$/Blog/resources/views/contents/post/visual.blade.php" />
@@ -152,7 +184,6 @@
         <option value="$PROJECT_DIR$/Blog/routes/web.php" />
         <option value="$PROJECT_DIR$/Blog/app/Http/Controllers/PhotoController.php" />
         <option value="$PROJECT_DIR$/Blog/resources/views/contents/photo/list.blade.php" />
-        <option value="$PROJECT_DIR$/Blog/resources/views/contents/main/item_list.blade.php" />
         <option value="$PROJECT_DIR$/Blog/resources/views/common/footer.blade.php" />
         <option value="$PROJECT_DIR$/Blog/resources/views/contents/post/list.blade.php" />
         <option value="$PROJECT_DIR$/Blog/resources/views/common/pagination.blade.php" />
@@ -170,6 +201,8 @@
         <option value="$PROJECT_DIR$/Blog/database/migrations/2017_04_21_010137_add_content_at_posts_table.php" />
         <option value="$PROJECT_DIR$/Blog/database/migrations/2017_03_25_163902_create_posts_table.php" />
         <option value="$PROJECT_DIR$/Blog/public/css/travel.css" />
+        <option value="$PROJECT_DIR$/Blog/resources/views/contents/main/item_list.blade.php" />
+        <option value="$PROJECT_DIR$/Blog/resources/views/contents/main/visual.blade.php" />
       </list>
     </option>
   </component>
@@ -1614,12 +1647,12 @@
       <updated>1491700073718</updated>
       <workItem from="1491700075181" duration="1595000" />
       <workItem from="1491701902488" duration="26596000" />
-      <workItem from="1492736207461" duration="768000" />
+      <workItem from="1492736207461" duration="1746000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28959000" />
+    <option name="totallyTimeSpent" value="29937000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -1699,13 +1732,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Blog/resources/views/contents/main/default.blade.php" />
-    <entry file="file://$PROJECT_DIR$/Blog/resources/views/contents/main/visual.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Blog/resources/views/contents/post/visual.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1828,14 +1854,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Blog/resources/views/contents/main/item_list.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Blog/resources/views/common/footer.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1918,13 +1936,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Blog/resources/views/contents/main/_base.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -2040,6 +2051,32 @@
         <state relative-caret-position="575">
           <caret line="167" column="0" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog/resources/views/contents/main/_base.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog/resources/views/contents/main/item_list.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog/resources/views/contents/main/visual.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

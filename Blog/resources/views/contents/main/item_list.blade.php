@@ -3,7 +3,7 @@
         <div class="wrap_item_list_inner">
             <p class="wrap_item_list_title">LATEST BLOG POST</p>
             <ul class="item_list column4">
-                @foreach( $postItems as $item )
+                @forelse( $postItems as $item )
                 <li class="item">
                     <a href="{{ route('posts.show', $item->id) }}" class="item_link">
                         {{--<img src="{{ Storage::url($recentPost->img_path)}}" alt="">--}}
@@ -14,7 +14,9 @@
                         </div>
                     </a>
                 </li>
-                @endforeach
+                @empty
+                <li></li>
+                @endforelse
             </ul>
         </div>
     </div>
