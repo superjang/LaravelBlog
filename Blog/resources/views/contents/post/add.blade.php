@@ -19,7 +19,9 @@
                 // Replace the <textarea id="editor1"> with a CKEditor
                 // instance, using default configuration.
                 window.onload = function(){
-                    CKEDITOR.replace( 'content' );
+                    CKEDITOR.replace( 'content' ,{
+                        filebrowserUploadUrl: 'ㅁㅇ'
+                    });
                     $('#_btnWritePost').on('click', function(){
                         CKEDITOR.instances.editor1.getData();
                     });
