@@ -10,6 +10,7 @@
         <meta name="description" content="여행블로그 블라블라" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco"/>
         <link rel="stylesheet" href="{{ asset('css/travel.css') }}"/>
+        <link rel="stylesheet" href="{{ asset('js/lib/ckeditor/contents.css') }}"/>
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
     </head>
@@ -25,5 +26,6 @@
         ]) !!};
     </script>
     <script src="../../js/app.js"></script>
+    <script src="../../js/lib/ckeditor/ckeditor.js"></script>
     </body>
 </html>

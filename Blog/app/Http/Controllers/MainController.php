@@ -33,6 +33,26 @@ class MainController extends Controller
         $recentPosts = \App\Post::orderBy('updated_at', 'desc')->limit(4)->get();
         $userItems = \App\User::orderBy('created_at', 'desc')->limit(4)->get();
 
+        if(!empty($recentPosts->items))
+        {
+            foreach($recentPosts as $post)
+            {
+                if($post->content)
+                {
+                    $post->content = substr($post->content, 0, 100).'...';
+                }
+
+                if(!$post->img_path){
+                    $post->img_path = 'default.jpg';
+                }
+
+            }
+        }
+        else
+        {
+            $recentPosts = 'empty post';
+        }
+
         $modelView = [
             'mainItems' => $mainItems,
             'postItems' => $recentPosts,
