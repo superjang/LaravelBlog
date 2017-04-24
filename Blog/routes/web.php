@@ -30,4 +30,6 @@ Route::get('/photo', 'PhotoController@index')->name('photo');
 Route::resource('/comments', 'CommentController');
 Route::get('/users', 'UserController@index')->name('users');
 Route::get('/users/show', 'UserController@show')->name('users.show');
+// util
+Route::post('/util/image/upload', 'PostImageUploade@upload')->name('util.image.upload');
 

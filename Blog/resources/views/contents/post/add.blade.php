@@ -20,7 +20,7 @@
                 // instance, using default configuration.
                 window.onload = function(){
                     CKEDITOR.replace( 'content' ,{
-                        filebrowserUploadUrl: 'ㅁㅇ'
+                        filebrowserUploadUrl: '{{ route("util.image.upload") }}'
                     });
                     $('#_btnWritePost').on('click', function(){
                         CKEDITOR.instances.editor1.getData();
